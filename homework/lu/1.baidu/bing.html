@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>微软 bing 搜索-国内版</title>
+</head>
+<style>
+  div {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('https://cn.bing.com/th?id=OHR.KochiFall_ZH-CN7256567323_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp') no-repeat;
+    background: cover
+  }
+
+  .clear_margin {
+    margin: 0 !important;
+  }
+
+  .wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .header {
+    min-width: 1000px;
+  }
+
+  .header_left {
+    float: left;
+    margin: 10px 30px;
+  }
+
+  .small_btn {
+    float: left;
+    bottom: 0%;
+    font-size: 12px;
+    margin-left: 28px;
+    line-height: 32px;
+    color: rgb(245, 245, 245);
+  }
+
+  .search_wrap {
+    margin-top: 50px;
+    margin-left: 200px;
+    position: relative;
+  }
+
+  .search_wrap::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .search_wrap input {
+    float: left;
+    width: 500px;
+    height: 33px;
+    outline: none;
+    padding: 12px;
+    padding-right: 50px;
+    border-radius: 0 5px 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  }
+
+  .logo {
+    background-position: 0 0;
+    margin: -7px 21px 0 0;
+    width: 132px;
+    height: 52px;
+    background: transparent url(https://cn.bing.com/sa/simg/hpc27.png) no-repeat;
+    overflow: hidden;
+    float: left;
+  }
+
+  #est_switch {
+    position: absolute;
+    top: -36px;
+    left: 153px;
+  }
+
+  .est_btn {
+    position: relative;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 17px;
+    color: #010101;
+  }
+
+  #est_switch .est_selected::after {
+    background: #fff;
+    border: 1px #ccc solid;
+    border-bottom: none;
+  }
+
+  #est_cn::after,
+  #est_en::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.1, 1.3) perspective(.5em) rotateX(2.2deg);
+    transform-origin: bottom left;
+    background: rgba(255, 255, 255, .8);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  #est_switch .est_selected::before {
+    background: #fff;
+  }
+
+  #est_cn::before {
+    border-left: 1px #ccc solid;
+    left: 0;
+    height: 9px;
+  }
+</style>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header_left">
+        <a href="">
+          <span class="small_btn">图片</span>
+          <span class="small_btn">视频</span>
+          <span class="small_btn">学术</span>
+          <span class="small_btn">词典</span>
+          <span class="small_btn">地图</span>
+          <div style="display: none;">
+
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="search_wrap">
+    <div id="est_switch">
+      <div id="est_cn" class="est_btn est_selected">国内版</div>
+      <div id="est_en" class="est_btn">国际版</div>
+    </div>
+    <div class="logo"></div><input type="text" value="" id="search">
+  </div>
+</body>
+
+</html>

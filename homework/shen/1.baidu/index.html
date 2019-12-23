@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>百度一下，你就知道</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="keywords" content="前端开发学习"/>
+    <meta name="description" content="每天下班学习到十点"/>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">   
+    <script type="text/javascript">
+        alert('欢迎访问');
+    </script>
+    <link rel="shortcul icon" href="https://www.baidu.com/favicon.ico" type="image/x-icon">
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  div, body{
+    margin: 0;
+    padding: 0;
+  }
+  .clear_margin{
+    margin: 0 !important;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .header{
+    min-width: 1000px;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+  }
+  .header_left{
+    float: left;
+  }
+  .header_right{
+    float: right;
+  }
+  .header:after, .header:before{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .tj_bn{
+    float: left;
+    font-size: 12px;
+    margin-right: 19px;
+    line-height: 32px;
+  }
+  .tj_xl{
+    float: left;
+    font-size: 12px;
+    margin-right: 7px;
+    line-height: 32px;
+  }
+  .tj_bn.area{
+    margin-right: 0;
+    margin-left: 18px;
+  }
+  .tj_bn a{
+    display: inline-block;
+    color: #555;
+  }
+  .month{
+    float: left;
+    width: 18px;
+    height: 18px;
+    background: url('https://dss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/weather/aladdin/png_18/a0_night.png') no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  .header_right .small_btn{
+    font-weight: 600;
+  }
+  .header_right .more{
+    position: relative;
+    float: right;
+    width: 86px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #38f;
+    text-decoration: none;
+  }
+  .header_right .more:hover{
+    color: #555;
+    background-color: #f9f9f9;
+  }
+  .logo{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .logo img{
+    width: 270px;
+    height: 132px;
+  }
+  .search{
+    width: 641px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .search input{
+    float: left;
+    width: 536px;
+    height: 40px;
+    outline: none;
+    padding: 12px;
+    padding-right: 50px;
+  }
+  .search a{
+    float: left;
+    width: calc(100% - 536px);
+    height: 40px;
+    background: #38f;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+  }
+  .search input:focus{
+    border: 1px solid #38f
+  }
+  .header_right .login{
+    position: relative;
+    float: right;
+    width: 86px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #38f;
+    text-decoration: none;
+  }
+  .header_right .login:hover{
+    color: #555;
+    background-color: #f9f9f9;
+  }
+  .nop{
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .nop li{
+      line-height: 40px;
+      float: left;
+    margin-top:15px;
+    margin-right:10px;
+  }
+  li{
+    list-style:none;
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header_left">
+        <a href="">
+          <span class="tj_bn area">广州：</span>
+          <span class="month"></span>
+          <span class="tj_xl">15°C</span>
+          <span class="tj_xl" style="color: #38f; font-weight:bold; margin-left: 5px;">优</span>
+          <span class="tj_xl">47</span>
+          <span class="tj_xl">|</span>
+        </a>
+        <span class="tj_bn"><a href="">换肤</a></span>
+        <span class="tj_bn"><a href="">消息</a></span>
+      </div>
+      <div class="header_right">
+          <span class="tj_bn"><a href="">新闻</a></span>
+          <span class="tj_bn"><a href="">hao123</a></span>
+          <span class="tj_bn"><a href="">地图</a></span>
+          <span class="tj_bn"><a href="">视频</a></span>
+          <span class="tj_bn"><a href="">贴吧</a></span>
+          <span class="tj_bn"><a href="">学术</a></span>
+          <a href="" class="more">
+            更多产品
+            <div class="nop" >
+              <ul>
+                 <li>百度</li>
+                 <li>图片</li>
+                 <li>音乐</li>
+                 <li>知道</li>
+                 <li>文库</li>
+                 <li>风云</li>
+              </ul>
+            </div>
+          </a>
+      </div>
+    </div>
+    <div class="logo">
+        <img src="https://www.baidu.com/img/bd_logo1.png?qua=high&where=super">
+    </div>
+    <div class="search">
+      <input type="text" value="" id="search">
+      <a href="https://www.baidu.com/s?wd=">百度一下</a>
+    </div>
+  </div>
+</body>
+  <script>
+  </script>
+</html>

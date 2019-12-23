@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>百度亿下</title>
+  <link rel="shortcul icon" href="https://www.baidu.com/favicon.ico" type="image/x-icon">
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  div body{
+    margin: 0;
+    padding: 0;
+  }
+  .whole{
+    width: 100%;
+  }
+  .head{
+    float: left;
+    width: 100%;
+    min-width: 1000px;
+    border-bottom: 1px solid #ededed;
+    line-height:32px;
+  }
+  .head-left{
+    float: left;
+    font-size: 12px;
+    color: #555555;
+  }
+  .whole .head .head-left .head-left_text{
+    float: left;
+    margin-right: 7px;
+  }
+  .head-left a{
+    color: #555555;
+  }
+  a:link{
+    color: #555555;
+    text-decoration: none;
+  }
+  a:active{
+    color: #555555;
+    text-decoration: none;
+  }
+  a:visited{
+    columns: #555555;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #555555;
+    text-decoration: none;
+  }
+  .head-left .head-left_sun{
+    float: left;
+    width: 18px;
+    height: 18px;
+    background: url(https://dss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/weather/aladdin/png_18/a0.png) no-repeat center center;
+    background-size:100% 100%;
+    margin-top: 7px;
+    margin-right: 5px;
+  }
+  .head-right{
+    float:right;
+  }
+  .head-right .head-right_text{
+    float: left;
+    color: #555;
+    font-size: 13px;
+    margin-left: 19px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .head-right .button-gd{
+    color: #ededed;
+    background-color:#38f;
+    width: 86px;
+    text-align: center;
+  }
+  .head-right .button-gd:hover{
+    background-color: #f9f9f9;
+    color: #555;
+  }
+  .logo{
+    display: block;
+    text-align: center;
+  }
+  .logo img{
+    margin-top: 45px;
+    margin-bottom: 5px;
+    width: 270px;
+  }
+  .inp{
+    width: 638px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .inp input{
+    float: left;
+    width: 536px;
+    height: 40px;
+    padding: 9px 7px;
+    font: 16px arial;
+    outline:none
+  }
+  .inp input:focus{
+    border: 1px solid #3388ff;
+  }
+  .inp a{
+    float: left;
+    width: 102px;
+    height: 40px;
+    color: #ededed;
+    font-size: 16px;
+    text-align: center;
+    line-height: 38px;
+    background-color:#38f;
+  }
+  .inp .camera{
+    position:absolute;
+    right: 113px;
+    top: 10px;
+    height: 16px;
+    width: 18px;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png);
+  }
+  .inp .camera:hover{
+    background-position-y: 90%;
+  }
+
+
+  .head-right .head-right_my-inp{
+    position: absolute;
+    right: 140px;
+    top: 32px;
+    display: none;
+    width: 65px;
+    height: 75px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px #555555;
+  }
+  .head-right .head-right_my:hover .head-right_my-inp{
+    display: block;
+  }
+  .head-right .inp_spa{
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    line-height: 25px;
+    color: #555;
+  }
+  .head-right .inp_spa:hover{
+    background-color: #38f;
+    color: #ededed;
+  }
+  .head-right_so-inp{
+    position: absolute;
+    right: 80px;
+    top: 32px;
+    display: none;
+    width: 71px;
+    height: 100px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px #555555;
+  }
+  .head .head-right .head-right_so:hover .head-right_so-inp{
+    display: block;
+  }
+  .head-right_more-inp{
+    position: absolute;
+    right: 0px;
+    top: 32px;
+    width: 86px;
+    height:900px;
+    overflow: hidden;
+    display: none;
+    padding: 0px 10px;
+    border: #e7e7e7 1px solid;
+    background-color:#f9f9f9;
+  }
+  .head-right_more:hover .head-right_more-inp{
+    display: block;
+  }
+  .head-right_more-inp img{
+    display:block;
+    height: 36px;
+    width: auto;
+    margin: 10px auto 5px;
+  }
+  .head-right_more .head-right_more-inp span{
+    display: block;
+    font-size: 12px;
+    color: #555555;
+    text-align: center;
+    line-height: 15px;
+    margin-bottom: 10px;
+    border-top: #f0f0f0 1px solid;
+  }
+  .head-right_more .head-right_more-inp span:hover{
+    text-decoration:underline;
+  }
+  .whole .head .head-right .head-right_more span:hover .button-gd{
+    background-color: #f9f9f9;
+  }
+</style>
+<body>
+  <div class="whole">
+    <div class="head">
+      <div class="head-left">
+        <a href="">
+          <span class="head-left_text">广州:</span>
+          <span class="head-left_sun"></span>
+          <span class="head-left_text">19°</span>
+          <span class="head-left_text" style="color:blue; font-weight: bold;">良</span>
+          <span class="head-left_text">54</span>
+          <span class="head-left_text" style="margin-right: 10px;">|</span>
+          <span class="head-left_text" style="text-decoration:underline; margin-right: 15px;">换肤</span>
+          <span class="head-left_text" style="text-decoration:underline;">消息</span>
+        </a>
+      </div>
+      <div class="head-right">
+        <a href="">
+          <span class="head-right_text">新闻</span>
+          <span class="head-right_text">hao123</span>
+          <span class="head-right_text">地图</span>
+          <span class="head-right_text">视频</span>
+          <span class="head-right_text">贴吧</span>
+          <span class="head-right_text">学术</span>
+        </a>
+        <a href="" class="head-right_my">
+          <span class="head-right_text" style="font-weight: normal;">fantacy</span>
+          <div class="head-right_my-inp">
+            <span class="inp_spa">个人中心</span>
+            <span class="inp_spa">账号设置</span>
+            <span class="inp_spa">退出</span>
+          </div>
+        </a>
+        <a href="" class="head-right_so">
+          <span class="head-right_text" style="font-weight: normal;">设置</span>
+          <div class="head-right_so-inp">
+              <span class="inp_spa">搜索设计</span>
+              <span class="inp_spa">高级搜索</span>
+              <span class="inp_spa">关闭预测</span>
+              <span class="inp_spa">隐私设置</span>
+            </div>
+        </a>
+        <a href="" class="head-right_more">
+          <span class="head-right_text button-gd" style="font-weight: normal; text-decoration:none;">更多产品</span>
+          <div class="head-right_more-inp">
+          <span><img src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/yingxiao_72.png?v=md5"/>百度营销</span>
+          <span><img src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/qqyy.png?v=md5"/>音乐</span>
+          <span><img src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/image_72.png?v=md5"/>图片</span>
+          <span><img src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/zhidao_72.png?v=md5"/>知道</span>
+          <span><img src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/wenku_72.png?v=md5"/>文库</span>
+          <span><img src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bang_72.png?v=md5"/>风云榜</span>
+          <span style="font-size: 8px; padding-top: 20px;">全部产品>></span>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+    <div class="logo">
+      <img src="https://www.baidu.com/img/bd_logo1.png?qua=high&where=super"/>
+    </div>
+    <div class="inp">
+      <input type="text" value="" id="">
+      <a href="www.baidu.com">百度亿下</a>
+      <div class="camera"></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, code, del, dfn, em, img, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, button, input, table, caption, tbody, tfoot, thead, tr, th, td, menu {
+	margin:0;
+	padding:0;
+}
+audio:not([controls]) {
+display:none
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	empty-cells:show
+}
+ol, ul, menu {
+	list-style:none
+}
+.dialog{
+	height: 200px;
+	border: solid 1px #b5b0b0;
+	border-radius:5px;
+	position: absolute;
+	left: 30%;
+	bottom:30%;
+	background:#eee;
+	line-height: 40px;
+	text-align: center;
+	display: none;
+	font: 16px;
+}

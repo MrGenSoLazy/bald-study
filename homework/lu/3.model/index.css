@@ -1,0 +1,41 @@
+
+  .messagebox{
+    border: 1px solid #dcdfe6;
+    margin: 15px;
+    padding: 20px 30px;
+  }
+  .thebox{
+    font-size: 18px;
+    color: #409eff;
+    background: #ffffff;
+    border: none;
+  }
+  .didilaji{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  .chaolajididi{
+    width: 550px;
+    height: 200px;
+    margin: 300px auto;
+    background-color:#ffffff;
+  }
+  .chaolajididi span{
+    display:block;
+    color: #409eff;
+    padding: 5px ;
+  }
+  .choupididi{
+   padding: 5px 10px 5px 450px;
+   background-color: #ffffff;
+   color: #409eff;
+   outline: none;
+   border: none;
+   font-size: 15px;
+  }
+  
